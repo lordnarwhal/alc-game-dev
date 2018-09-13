@@ -34,7 +34,11 @@ private bool grounded;
 
 		// This code makes the character move from side to side using A&D keys
 		if(Input.GetKey (KeyCode.D)){
-			GetComponent<Rigidbody2D
+			GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+		}
+		if(Input.GetKey (KeyCode.A)){
+			GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
 	}
 
