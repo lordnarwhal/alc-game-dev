@@ -12,7 +12,7 @@ public class projectile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(pc.transform.localScale.x < 0)
-			Speed = -Speed;
+				Speed = -Speed;
 			//Speed = Speed * Mathf.Sign(pc.transform.local.x);
 	}
 	
@@ -23,12 +23,12 @@ public class projectile : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.tag == "Enemy"){
-			Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
-			Destroy (other.gameObject);
-			ScoreManager.AddPoints (PointsForKill);
+				Instantiate(EnemyDeath, other.transform.position, other.transform.rotation);
+				Destroy (other.gameObject);
+				ScoreManager.AddPoints (PointsForKill);
 		}
 
-		Instantiate(ProjectileParticle, transform.position, transform.rotation);
-		Destroy (gameObject);
+			Instantiate(ProjectileParticle, transform.position, transform.rotation);
+			Destroy (gameObject);
 	}
 }
