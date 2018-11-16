@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4132198620030832}
   - component: {fileID: 198294387462305880}
   - component: {fileID: 199678029658949164}
+  - component: {fileID: 114014732533948364}
+  - component: {fileID: 114861230079667520}
   m_Layer: 0
   m_Name: DeathES
   m_TagString: Untagged
@@ -41,6 +43,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114014732533948364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168711041628858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1327945023, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114861230079667520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168711041628858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d82bb50fbe34a59bded053a7fbd5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198294387462305880
 ParticleSystem:
   m_ObjectHideFlags: 1

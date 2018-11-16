@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4063872757458776}
   - component: {fileID: 198881556844785472}
   - component: {fileID: 199260381910852540}
+  - component: {fileID: 114245792551983486}
   m_Layer: 0
   m_Name: bulleteffects
   m_TagString: Untagged
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &114245792551983486
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402280051368438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d82bb50fbe34a59bded053a7fbd5ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198881556844785472
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -120,7 +132,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
