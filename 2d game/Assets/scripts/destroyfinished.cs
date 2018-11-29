@@ -17,7 +17,7 @@ public class destroyfinished : MonoBehaviour {
 		if(thisParticleSystem.isPlaying)
 			return;
 
-		Destroy (gameObject);
+		Destroy(gameObject);
 		
 	}
 	void OnBecameInvisible (){

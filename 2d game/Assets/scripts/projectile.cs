@@ -18,9 +18,9 @@ public class projectile : MonoBehaviour {
 	void Start () {
 		 PC = GameObject.Find("pc"); 
 
-		 EnemyDeath = Resources.Load("Prefabs/DeathES") as GameObject;
+		 EnemyDeath = Resources.Load("Prefabs/enemydeath") as GameObject;
 
-		 ProjectileParticle = Resources.Load("Prefabs/RespawnES") as GameObject;
+		 ProjectileParticle = Resources.Load("Prefabs/bulleteffects") as GameObject;
 
 		if(PC.transform.localScale.x < 0)
 			Speed = -Speed;
@@ -52,8 +52,8 @@ public class projectile : MonoBehaviour {
 
 		void OnCollisionEnter2D(Collision2D other)
 	{
-		Instantiate(ProjectileParticle, transform.position, transform.rotation);
-		Destroy (gameObject);
+			Instantiate(ProjectileParticle, transform.position, transform.rotation);
+			Destroy (gameObject);
 		
 	}
 }
