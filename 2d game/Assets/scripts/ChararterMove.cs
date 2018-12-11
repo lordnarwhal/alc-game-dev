@@ -17,10 +17,12 @@ private bool grounded;
 
 //Non-Slide Player
 private float moveVelocity;
+public Animator animator;
 
 	// Use this for initialization
 	void Start () {
-		
+		animator.SetBool("isWalking",false);
+		animator.SetBool("isJumping",false);
 	}
 
 
@@ -35,9 +37,12 @@ private float moveVelocity;
 		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
 			Jump();
 		}
+
+
 		//Double Jump Code
 		if(grounded)
 			doubleJump = false;
+			animator.SetBool("isJumping",false);
 
 			if(Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !grounded){
 				Jump();
@@ -50,10 +55,20 @@ private float moveVelocity;
 		if(Input.GetKey (KeyCode.D)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = moveSpeed;
+			animator.SetBool("isWalking",true);
 		}
 		if(Input.GetKey (KeyCode.A)){
 			//GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			moveVelocity = -moveSpeed;
+			animator.SetBool("isWalking",true);
+		}
+		else if(Input.GetKey (KeyCode.D)){
+			animator.SetBool("isWalking",false);
+		}
+		if(Input.GetKey (KeyCode.A)){
+		}
+		else if(Input.GetKey (KeyCode.A)){
+			animator.SetBool("isWalking",false);
 		}
 
 		GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
@@ -67,5 +82,6 @@ private float moveVelocity;
 
 	public void Jump(){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
+		animator.SetBool("isJumping",true);
 	}
 }
