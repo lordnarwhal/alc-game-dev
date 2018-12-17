@@ -11086,7 +11086,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4675008375029538, guid: 0026254771ef2471fac57c2cd1ace5d4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.5039
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 4675008375029538, guid: 0026254771ef2471fac57c2cd1ace5d4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11175,6 +11175,30 @@ Prefab:
         type: 2}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211768178829194, guid: 0026254771ef2471fac57c2cd1ace5d4, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 4161296114483838, guid: 0026254771ef2471fac57c2cd1ace5d4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 61379253333295534, guid: 0026254771ef2471fac57c2cd1ace5d4,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.00070895255
+      objectReference: {fileID: 0}
+    - target: {fileID: 61379253333295534, guid: 0026254771ef2471fac57c2cd1ace5d4,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.0082454905
+      objectReference: {fileID: 0}
+    - target: {fileID: 61379253333295534, guid: 0026254771ef2471fac57c2cd1ace5d4,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.17135589
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0026254771ef2471fac57c2cd1ace5d4, type: 2}

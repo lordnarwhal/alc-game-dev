@@ -35,6 +35,7 @@ public Animator animator;
 
 		//This code makes the character jump
 		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
+			animator.SetBool("isJumping",true);
 			Jump();
 		}
 
@@ -47,6 +48,7 @@ public Animator animator;
 			if(Input.GetKeyDown (KeyCode.Space)&& !doubleJump && !grounded){
 				Jump();
 				doubleJump = true;
+				animator.SetBool("isJumping",true);
 			}
 		//Non-Slide Player
 		moveVelocity = 0f;
